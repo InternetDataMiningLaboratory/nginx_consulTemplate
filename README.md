@@ -11,7 +11,7 @@ nginx-consulTemplate is the image of a load balancer. The image contains a nginx
 ## Create and run image
 
 ```bash
-    docker run -d -P -e "CONSUL=<consul server addr>"companyservice/nginx-consulTemplate
+    docker run -d -p 80:80 -e "CONSUL=<consul server addr>"companyservice/nginx-consulTemplate
 ```
 
 # Supported Docker versions
